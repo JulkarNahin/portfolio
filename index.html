@@ -1,83 +1,284 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Julkar Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Julkar Nahin | Software Engineer</title>
+
   <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <header>
-    <h1>Julkar Nahin</h1>
-    <p>Software Engineering Undergraduate</p>
-  </header>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>📧 <a href="mailto:julkarnahin@graduate.utm.my">julkarnahin@graduate.utm.my</a></p>
-    <p>📱 +60-142535227</p>
-    <p>🔗 <a href="https://linkedin.com/in/julkar-nahin">LinkedIn</a></p>
-    <p>💻 <a href="https://github.com/JulkarNahin">GitHub</a></p>
-    <p>🌐 <a href="https://portfolio.julkar.com">Portfolio</a></p>
+  <!-- NAVBAR -->
+
+  <nav class="navbar">
+    <div class="logo">JN</div>
+
+```
+<ul class="nav-links">
+  <li><a href="#about">About</a></li>
+  <li><a href="#skills">Skills</a></li>
+  <li><a href="#projects">Projects</a></li>
+  <li><a href="#education">Education</a></li>
+  <li><a href="#contact">Contact</a></li>
+</ul>
+```
+
+  </nav>
+
+  <!-- HERO SECTION -->
+
+  <section class="hero">
+
+```
+<div class="hero-content">
+
+  <p class="tag">SOFTWARE ENGINEERING STUDENT</p>
+
+  <h1>
+    Julkar Nahin
+  </h1>
+
+  <h2>
+    B.Sc. in Software Engineering with Honours
+  </h2>
+
+  <p class="hero-description">
+    Passionate about software architecture, web development,
+    data analytics, and scalable system design.
+  </p>
+
+  <div class="hero-buttons">
+
+    <a href="https://github.com/JulkarNahin" target="_blank" class="btn-primary">
+      GitHub
+    </a>
+
+    <a href="https://linkedin.com/in/julkar-nahin" target="_blank" class="btn-secondary">
+      LinkedIn
+    </a>
+
+  </div>
+
+</div>
+```
+
   </section>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I am a Software Engineering undergraduate at Universiti Teknologi Malaysia (UTM) with interests in software architecture, web application development, data analytics, and system design. I enjoy developing practical software solutions that combine clean architecture, responsive interfaces, and efficient data workflows.</p>
-    <p>My experience includes UML-based system modeling, Vue.js frontend development, data analytics using Alteryx and Tableau, and Java game development. I am continuously improving my technical skills through academic projects, certifications, and self-learning.</p>
+  <!-- ABOUT -->
+
+  <section id="about" class="section">
+
+```
+<div class="section-title">
+  <h2>About Me</h2>
+</div>
+
+<div class="about-card">
+  <p>
+    I am a Software Engineering undergraduate at Universiti Teknologi Malaysia (UTM)
+    with interests in software architecture, web application development,
+    data analytics, and system design.
+  </p>
+
+  <br>
+
+  <p>
+    My experience includes UML-based system modeling, Vue.js frontend development,
+    data analytics using Alteryx and Tableau, and Java game development.
+  </p>
+</div>
+```
+
   </section>
 
-  <section id="education">
-    <h2>Education</h2>
-    <p><strong>Universiti Teknologi Malaysia (UTM)</strong><br>
-    Bachelor of Computer Science (Software Engineering with Honours)<br>
-    Expected Graduation: 2028</p>
-    <ul>
-      <li>Software Engineering</li>
-      <li>Object-Oriented Programming</li>
-      <li>System Analysis & Design</li>
-      <li>Data Structures & Algorithms</li>
-      <li>Database Systems</li>
-      <li>Human Computer Interaction</li>
-    </ul>
+  <!-- SKILLS -->
+
+  <section id="skills" class="section">
+
+```
+<div class="section-title">
+  <h2>Technical Skills</h2>
+</div>
+
+<div class="skills-grid">
+
+  <div class="skill-card">
+    <h3>Programming</h3>
+    <p>C++, Python, Java, JavaScript, HTML, CSS</p>
+  </div>
+
+  <div class="skill-card">
+    <h3>Frontend</h3>
+    <p>Vue.js, Responsive Design, Routing</p>
+  </div>
+
+  <div class="skill-card">
+    <h3>Data Analytics</h3>
+    <p>Alteryx Designer, Tableau, Excel</p>
+  </div>
+
+  <div class="skill-card">
+    <h3>Software Design</h3>
+    <p>UML, System Analysis, Architecture</p>
+  </div>
+
+  <div class="skill-card">
+    <h3>Algorithms</h3>
+    <p>Arrays, Linked Lists, Trees, Graphs</p>
+  </div>
+
+  <div class="skill-card">
+    <h3>Tools</h3>
+    <p>Laragon, Eclipse IDE, Canva, Figma</p>
+  </div>
+
+</div>
+```
+
   </section>
 
-  <section id="skills">
-    <h2>Technical Skills</h2>
-    <p>C++ | Python | Java | HTML | CSS | JavaScript | Vue.js | Alteryx | Tableau | UML | Laragon | Eclipse IDE | Canva | Figma</p>
+  <!-- PROJECTS -->
+
+  <section id="projects" class="section">
+
+```
+<div class="section-title">
+  <h2>Projects</h2>
+</div>
+
+<div class="projects-grid">
+
+  <div class="project-card">
+    <h3>Examiner Module</h3>
+
+    <p>
+      Designed UML architecture for examiner workflows including
+      grading, thesis review, and evaluation systems.
+    </p>
+
+    <span>UML • Figma • Software Architecture</span>
+  </div>
+
+  <div class="project-card">
+    <h3>Movie Analytics Workflow</h3>
+
+    <p>
+      Developed Alteryx workflows and Tableau dashboards
+      for movie dataset analysis and visualization.
+    </p>
+
+    <span>Alteryx • Tableau • Excel</span>
+  </div>
+
+  <div class="project-card">
+    <h3>Vue.js Demo Application</h3>
+
+    <p>
+      Built responsive Vue.js application with routing,
+      state management, and API integration.
+    </p>
+
+    <span>Vue.js • JavaScript • CSS</span>
+  </div>
+
+  <div class="project-card">
+    <h3>EcoVale – 2D Java Game</h3>
+
+    <p>
+      Developed a sustainability-themed 2D adventure game
+      with object-oriented programming concepts.
+    </p>
+
+    <span>Java • Eclipse IDE • OOP</span>
+  </div>
+
+  <div class="project-card">
+    <h3>Library Duty System</h3>
+
+    <p>
+      Designed workflow and scheduling system
+      for school library duty management.
+    </p>
+
+    <span>UML • Database Concepts</span>
+  </div>
+
+</div>
+```
+
   </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li>Examiner Module – UML System Architecture</li>
-      <li>Movie Analytics Workflow – Alteryx & Tableau</li>
-      <li>Vue.js Demo Application</li>
-      <li>EcoVale – 2D Java Game</li>
-      <li>Library Duty System – SK Bandar Utama Damansara 4</li>
-    </ul>
+  <!-- EDUCATION -->
+
+  <section id="education" class="section">
+
+```
+<div class="section-title">
+  <h2>Education & Certifications</h2>
+</div>
+
+<div class="education-card">
+
+  <h3>Universiti Teknologi Malaysia (UTM)</h3>
+
+  <p>
+    Bachelor of Computer Science (Software Engineering with Honours)
+  </p>
+
+  <span>Expected Graduation: 2028</span>
+
+  <hr>
+
+  <ul>
+    <li>Alteryx Designer Core Certified (2026)</li>
+    <li>IELTS Academic — Band 7.0 (CEFR C1)</li>
+    <li>British Council English Course Completion</li>
+  </ul>
+
+</div>
+```
+
   </section>
 
-  <section id="certifications">
-    <h2>Certifications</h2>
-    <ul>
-      <li>Alteryx Designer Core Certified (2026)</li>
-      <li>IELTS Academic – Band 7.0 (CEFR C1, 2023)</li>
-      <li>British Council – English Course Completion (2023)</li>
-    </ul>
+  <!-- CONTACT -->
+
+  <section id="contact" class="section">
+
+```
+<div class="section-title">
+  <h2>Contact</h2>
+</div>
+
+<div class="contact-card">
+
+  <p>📧 julkarnahin615@gmail.com</p>
+
+  <p>📱 +60-142535227</p>
+
+  <p>🔗 linkedin.com/in/julkar-nahin</p>
+
+  <p>💻 github.com/JulkarNahin</p>
+
+</div>
+```
+
   </section>
 
-  <section id="objective">
-    <h2>Career Objective</h2>
-    <p>To build a strong career in software engineering by contributing to innovative technology projects involving web development, system architecture, and data-driven solutions while continuously improving technical expertise and industry experience.</p>
-  </section>
+  <!-- FOOTER -->
 
   <footer>
-    <p>Connect: 
-       <a href="https://linkedin.com/in/julkar-nahin">LinkedIn</a> | 
-       <a href="https://github.com/JulkarNahin">GitHub</a> | 
-       <a href="mailto:julkarnahin@graduate.utm.my">Email</a>
+    <p>
+      © 2026 Julkar Nahin • Built with HTML & CSS
     </p>
   </footer>
+
 </body>
 </html>
