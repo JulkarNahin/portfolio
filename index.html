@@ -1,46 +1,58 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Julkar Nahin | Software Engineer</title>
 
   <link rel="stylesheet" href="style.css">
 
+  <!-- GOOGLE FONT -->
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
 </head>
 
 <body>
 
-  <!-- NAVBAR -->
-
   <nav class="navbar">
-    <div class="logo">JN</div>
 
 ```
-<ul class="nav-links">
-  <li><a href="#about">About</a></li>
-  <li><a href="#skills">Skills</a></li>
-  <li><a href="#projects">Projects</a></li>
-  <li><a href="#education">Education</a></li>
-  <li><a href="#contact">Contact</a></li>
-</ul>
+<div class="nav-container">
+
+  <div class="brand">
+    Julkar Nahin
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#achievements">Achievements</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+</div>
 ```
 
   </nav>
-
-  <!-- HERO SECTION -->
 
   <section class="hero">
 
 ```
 <div class="hero-content">
 
-  <p class="tag">SOFTWARE ENGINEERING STUDENT</p>
+  <p class="tag">
+    SOFTWARE ENGINEERING STUDENT
+  </p>
 
   <h1>
     Julkar Nahin
@@ -72,8 +84,6 @@
 
   </section>
 
-  <!-- ABOUT -->
-
   <section id="about" class="section">
 
 ```
@@ -81,7 +91,8 @@
   <h2>About Me</h2>
 </div>
 
-<div class="about-card">
+<div class="card">
+
   <p>
     I am a Software Engineering undergraduate at Universiti Teknologi Malaysia (UTM)
     with interests in software architecture, web application development,
@@ -94,12 +105,11 @@
     My experience includes UML-based system modeling, Vue.js frontend development,
     data analytics using Alteryx and Tableau, and Java game development.
   </p>
+
 </div>
 ```
 
   </section>
-
-  <!-- SKILLS -->
 
   <section id="skills" class="section">
 
@@ -117,7 +127,7 @@
 
   <div class="skill-card">
     <h3>Frontend</h3>
-    <p>Vue.js, Responsive Design, Routing</p>
+    <p>Vue.js, Responsive Design, Routing & State Management</p>
   </div>
 
   <div class="skill-card">
@@ -136,7 +146,7 @@
   </div>
 
   <div class="skill-card">
-    <h3>Tools</h3>
+    <h3>Development Tools</h3>
     <p>Laragon, Eclipse IDE, Canva, Figma</p>
   </div>
 
@@ -144,8 +154,6 @@
 ```
 
   </section>
-
-  <!-- PROJECTS -->
 
   <section id="projects" class="section">
 
@@ -157,7 +165,8 @@
 <div class="projects-grid">
 
   <div class="project-card">
-    <h3>Examiner Module</h3>
+
+    <h3>Examiner Module – UML System Architecture</h3>
 
     <p>
       Designed UML architecture for examiner workflows including
@@ -165,9 +174,11 @@
     </p>
 
     <span>UML • Figma • Software Architecture</span>
+
   </div>
 
   <div class="project-card">
+
     <h3>Movie Analytics Workflow</h3>
 
     <p>
@@ -176,9 +187,11 @@
     </p>
 
     <span>Alteryx • Tableau • Excel</span>
+
   </div>
 
   <div class="project-card">
+
     <h3>Vue.js Demo Application</h3>
 
     <p>
@@ -187,20 +200,24 @@
     </p>
 
     <span>Vue.js • JavaScript • CSS</span>
+
   </div>
 
   <div class="project-card">
+
     <h3>EcoVale – 2D Java Game</h3>
 
     <p>
       Developed a sustainability-themed 2D adventure game
-      with object-oriented programming concepts.
+      using object-oriented programming concepts.
     </p>
 
     <span>Java • Eclipse IDE • OOP</span>
+
   </div>
 
   <div class="project-card">
+
     <h3>Library Duty System</h3>
 
     <p>
@@ -209,14 +226,13 @@
     </p>
 
     <span>UML • Database Concepts</span>
+
   </div>
 
 </div>
 ```
 
   </section>
-
-  <!-- EDUCATION -->
 
   <section id="education" class="section">
 
@@ -225,7 +241,7 @@
   <h2>Education & Certifications</h2>
 </div>
 
-<div class="education-card">
+<div class="card">
 
   <h3>Universiti Teknologi Malaysia (UTM)</h3>
 
@@ -233,11 +249,13 @@
     Bachelor of Computer Science (Software Engineering with Honours)
   </p>
 
-  <span>Expected Graduation: 2028</span>
+  <span class="small-text">
+    Expected Graduation: 2028
+  </span>
 
   <hr>
 
-  <ul>
+  <ul class="list">
     <li>Alteryx Designer Core Certified (2026)</li>
     <li>IELTS Academic — Band 7.0 (CEFR C1)</li>
     <li>British Council English Course Completion</li>
@@ -248,7 +266,33 @@
 
   </section>
 
-  <!-- CONTACT -->
+  <section id="achievements" class="section">
+
+```
+<div class="section-title">
+  <h2>Achievements & Languages</h2>
+</div>
+
+<div class="card">
+
+  <h3>Achievements / Awards</h3>
+
+  <ul class="list">
+    <li>MJIT Dean’s List Award 2025/2026-1</li>
+  </ul>
+
+  <hr>
+
+  <h3>Languages</h3>
+
+  <ul class="list">
+    <li>English</li>
+  </ul>
+
+</div>
+```
+
+  </section>
 
   <section id="contact" class="section">
 
@@ -257,28 +301,67 @@
   <h2>Contact</h2>
 </div>
 
-<div class="contact-card">
+<div class="card contact-card">
 
-  <p>📧 julkarnahin615@gmail.com</p>
+  <p>
+    📧
+    <a href="mailto:julkarnahin615@gmail.com">
+      julkarnahin615@gmail.com
+    </a>
+  </p>
 
-  <p>📱 +60-142535227</p>
+  <p>
+    📱
+    <a href="tel:+60142535227">
+      +60 14-253 5227
+    </a>
+  </p>
 
-  <p>🔗 linkedin.com/in/julkar-nahin</p>
+  <p>
+    🔗
+    <a href="https://linkedin.com/in/julkar-nahin" target="_blank">
+      linkedin.com/in/julkar-nahin
+    </a>
+  </p>
 
-  <p>💻 github.com/JulkarNahin</p>
+  <p>
+    💻
+    <a href="https://github.com/JulkarNahin" target="_blank">
+      github.com/JulkarNahin
+    </a>
+  </p>
 
 </div>
 ```
 
   </section>
 
-  <!-- FOOTER -->
+  <footer class="footer">
 
-  <footer>
-    <p>
-      © 2026 Julkar Nahin • Built with HTML & CSS
-    </p>
+```
+<div class="footer-links">
+
+  <a href="mailto:julkarnahin615@gmail.com">
+    Email
+  </a>
+
+  <a href="https://linkedin.com/in/julkar-nahin" target="_blank">
+    LinkedIn
+  </a>
+
+  <a href="https://github.com/JulkarNahin" target="_blank">
+    GitHub
+  </a>
+
+</div>
+
+<p>
+  © 2026 Julkar Nahin • Built with HTML & CSS
+</p>
+```
+
   </footer>
 
 </body>
+
 </html>
