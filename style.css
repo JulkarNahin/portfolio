@@ -8,12 +8,21 @@ padding:0;
 box-sizing:border-box;
 }
 
+html{
+scroll-behavior:smooth;
+}
+
 body{
 font-family:'Inter',sans-serif;
+
 background:#050816;
+
 color:white;
+
 overflow-x:hidden;
+
 line-height:1.7;
+
 padding-bottom:90px;
 }
 
@@ -23,39 +32,52 @@ padding-bottom:90px;
 
 .navbar{
 position:fixed;
+
 top:0;
+
 width:100%;
 
 background:rgba(5,8,22,0.92);
+
 backdrop-filter:blur(10px);
 
-border-bottom:1px solid rgba(255,255,255,0.05);
+border-bottom:
+1px solid rgba(255,255,255,0.05);
 
 z-index:1000;
 }
 
 .nav-container{
 max-width:1200px;
+
 margin:auto;
 
-padding:24px 7%;
+padding:24px 8%;
 
 display:flex;
+
 justify-content:center;
 }
 
 .nav-links{
 display:flex;
-gap:40px;
 
 list-style:none;
+
+gap:38px;
+
+flex-wrap:wrap;
+
+justify-content:center;
 }
 
 .nav-links a{
 text-decoration:none;
+
 color:white;
 
 font-size:16px;
+
 font-weight:500;
 
 transition:0.3s ease;
@@ -64,66 +86,79 @@ transition:0.3s ease;
 .nav-links a:hover
 
 /* ================================= */
-/*            HERO SECTION           */
+/*             HERO                  */
 /* ================================= */
 
 .hero{
 min-height:100vh;
 
 display:flex;
+
 justify-content:center;
+
 align-items:center;
 
-padding:140px 7% 100px;
+padding:
+140px 8% 120px;
+
+overflow:hidden;
 }
 
-.hero-container{
-max-width:1200px;
+.hero-wrapper{
 width:100%;
 
-display:flex;
-align-items:center;
-justify-content:space-between;
+max-width:1200px;
 
-gap:70px;
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+gap:80px;
 
 flex-wrap:wrap;
 }
 
 /* ================================= */
-/*          PROFILE FRAME            */
+/*         PROFILE FRAME             */
 /* ================================= */
 
 .profile-frame{
-width:320px;
-height:320px;
+width:300px;
 
-border-radius:30px;
+height:300px;
+
+border-radius:28px;
 
 overflow:hidden;
 
 border:3px solid #4f8cff;
 
-box-shadow:
-0 0 30px rgba(79,140,255,0.25);
-
 flex-shrink:0;
+
+box-shadow:
+0 0 35px rgba(79,140,255,0.25);
 }
 
 .profile-frame img{
 width:100%;
+
 height:100%;
 
 object-fit:cover;
 }
 
 /* ================================= */
-/*          HERO CONTENT             */
+/*           HERO TEXT               */
 /* ================================= */
 
-.hero-content{
+.hero-text{
 flex:1;
-min-width:300px;
+
+min-width:320px;
+
+max-width:700px;
 }
 
 .tag{
@@ -132,22 +167,26 @@ color:#4f8cff;
 letter-spacing:3px;
 
 font-size:14px;
+
 font-weight:600;
 
 margin-bottom:20px;
 }
 
-.hero-content h1{
-font-size:72px;
+.hero-text h1{
+font-size:68px;
+
 line-height:1.1;
 
-margin-bottom:22px;
+margin-bottom:24px;
 
 font-weight:800;
 }
 
-.hero-content h2{
+.hero-text h2{
 font-size:28px;
+
+line-height:1.5;
 
 color:#cbd5e1;
 
@@ -161,45 +200,54 @@ color:#4f8cff;
 
 font-size:17px;
 
-margin-bottom:30px;
+margin-bottom:28px;
 }
 
 .hero-description{
-max-width:700px;
+font-size:21px;
 
-font-size:22px;
+line-height:1.8;
 
 color:#d1d5db;
 }
 
 /* ================================= */
-/*          PAGE SECTION             */
+/*           PAGE SECTION            */
 /* ================================= */
 
 .page-section{
-padding:160px 7% 100px;
+padding:
+160px 8% 120px;
+
 min-height:100vh;
 }
 
+/* ================================= */
+/*          SECTION TITLE            */
+/* ================================= */
+
 .section-title{
 text-align:center;
-margin-bottom:60px;
+
+margin-bottom:70px;
 }
 
 .section-label{
 color:#4f8cff;
 
-letter-spacing:3px;
-
 text-transform:uppercase;
+
+letter-spacing:3px;
 
 font-size:14px;
 
-margin-bottom:12px;
+margin-bottom:14px;
 }
 
 .section-title h1{
 font-size:54px;
+
+font-weight:800;
 }
 
 /* ================================= */
@@ -208,53 +256,51 @@ font-size:54px;
 
 .card{
 max-width:1000px;
+
 margin:auto;
 
 background:#0f172a;
 
-border:1px solid rgba(255,255,255,0.05);
+border:
+1px solid rgba(255,255,255,0.05);
 
 border-radius:24px;
 
 padding:45px;
+
+box-shadow:
+0 0 20px rgba(0,0,0,0.2);
 }
 
-/* ================================= */
-/*            SKILLS GRID            */
-/* ================================= */
-
-.skills-grid,
-.projects-grid{
-display:grid;
-
-grid-template-columns:
-repeat(auto-fit,minmax(300px,1fr));
-
-gap:25px;
-}
-
-.skill-card,
-.project-card{
-background:#0f172a;
-
-border-radius:22px;
-
-border:1px solid rgba(255,255,255,0.05);
-
-padding:30px;
-
-transition:0.3s ease;
-}
-
-.skill-card:hover,
-.project-card:hover{
-transform:translateY(-6px);
-}
-
-.skill-card h3,
-.project-card h3{
-color:#4f8cff;
+.card h2{
 margin-bottom:15px;
+
+color:#4f8cff;
+}
+
+.card h3{
+margin-top:35px;
+
+margin-bottom:15px;
+
+color:#4f8cff;
+}
+
+.card p{
+color:#d1d5db;
+}
+
+/* ================================= */
+/*             HR LINE               */
+/* ================================= */
+
+hr{
+border:none;
+
+border-top:
+1px solid rgba(255,255,255,0.08);
+
+margin:35px 0;
 }
 
 /* ================================= */
@@ -264,12 +310,99 @@ margin-bottom:15px;
 .list,
 .project-list{
 padding-left:20px;
+
 margin-top:20px;
 }
 
 .list li,
 .project-list li{
-margin-bottom:12px;
+margin-bottom:14px;
+
+color:#d1d5db;
+}
+
+/* ================================= */
+/*          SKILLS GRID              */
+/* ================================= */
+
+.skills-grid,
+.projects-grid{
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(300px,1fr));
+
+gap:28px;
+}
+
+/* ================================= */
+/*          SKILL CARD               */
+/* ================================= */
+
+.skill-card,
+.project-card{
+background:#0f172a;
+
+border-radius:22px;
+
+border:
+1px solid rgba(255,255,255,0.05);
+
+padding:32px;
+
+transition:0.3s ease;
+
+box-shadow:
+0 0 18px rgba(0,0,0,0.18);
+}
+
+.skill-card:hover,
+.project-card:hover{
+transform:translateY(-7px);
+
+border-color:#4f8cff;
+}
+
+.skill-card h3,
+.project-card h3{
+color:#4f8cff;
+
+margin-bottom:18px;
+}
+
+.skill-card p,
+.project-card p{
+color:#d1d5db;
+}
+
+.project-card span{
+display:inline-block;
+
+margin-top:20px;
+
+color:#4f8cff;
+
+font-size:14px;
+
+font-weight:600;
+}
+
+/* ================================= */
+/*          EDUCATION TEXT           */
+/* ================================= */
+
+.education-program{
+font-size:20px;
+
+color:#d1d5db;
+
+margin-bottom:10px;
+}
+
+.education-year{
+color:#4f8cff;
+
+font-size:16px;
 }
 
 /* ================================= */
@@ -278,15 +411,20 @@ margin-bottom:12px;
 
 .contact-bar{
 position:fixed;
+
 bottom:0;
+
 width:100%;
 
 background:#0f172a;
 
-border-top:1px solid rgba(255,255,255,0.05);
+border-top:
+1px solid rgba(255,255,255,0.05);
 
 display:flex;
+
 justify-content:center;
+
 align-items:center;
 
 gap:35px;
@@ -304,31 +442,58 @@ color:#d1d5db;
 text-decoration:none;
 
 transition:0.3s ease;
+
+font-size:15px;
 }
 
 .contact-bar a:hover
 
 /* ================================= */
-/*            RESPONSIVE             */
+/*            SCROLLBAR              */
+/* ================================= */
+
+::-webkit-scrollbar{
+width:10px;
+}
+
+::-webkit-scrollbar-track{
+background:#050816;
+}
+
+::-webkit-scrollbar-thumb{
+background:#1e293b;
+
+border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover
+
+/* ================================= */
+/*          RESPONSIVE               */
 /* ================================= */
 
 @media(max-width:1000px){
 
-.hero-container{
+.hero-wrapper{
 flex-direction:column;
+
 text-align:center;
+
 }
 
-.hero-content h1{
-font-size:56px;
+.hero-text{
+max-width:100%;
 }
 
-.hero-content h2{
+.hero-text h1{
+font-size:54px;
+}
+
+.hero-text h2{
 font-size:24px;
 }
 
 .hero-description{
-font-size:20px;
 margin:auto;
 }
 
@@ -336,22 +501,23 @@ margin:auto;
 
 @media(max-width:768px){
 
-.nav-links{
-gap:18px;
-flex-wrap:wrap;
-justify-content:center;
+.hero{
+padding-top:180px;
 }
 
 .profile-frame{
-width:240px;
-height:240px;
+width:230px;
+
+
+height:230px;
+
 }
 
-.hero-content h1{
+.hero-text h1{
 font-size:42px;
 }
 
-.hero-content h2{
+.hero-text h2{
 font-size:20px;
 }
 
@@ -367,19 +533,19 @@ font-size:40px;
 padding:30px;
 }
 
+.nav-links{
+gap:18px;
+}
+
 }
 
 @media(max-width:500px){
 
-.hero{
-padding-top:180px;
-}
-
-.hero-content h1{
+.hero-text h1{
 font-size:34px;
 }
 
-.hero-content h2{
+.hero-text h2{
 font-size:18px;
 }
 
