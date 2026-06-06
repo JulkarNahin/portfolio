@@ -1,3 +1,7 @@
+/* ===================================== */
+/*              GLOBAL                   */
+/* ===================================== */
+
 *{
 margin:0;
 padding:0;
@@ -15,6 +19,10 @@ color:#ffffff;
 line-height:1.7;
 overflow-x:hidden;
 }
+
+/* ===================================== */
+/*              NAVBAR                   */
+/* ===================================== */
 
 .navbar{
 position:fixed;
@@ -66,6 +74,10 @@ transition:0.3s ease;
 }
 
 .nav-links a:hover
+
+/* ===================================== */
+/*               HERO                    */
+/* ===================================== */
 
 .hero{
 min-height:100vh;
@@ -119,6 +131,10 @@ max-width:850px;
 margin:auto auto 50px;
 }
 
+/* ===================================== */
+/*              BUTTONS                  */
+/* ===================================== */
+
 .hero-buttons{
 display:flex;
 justify-content:center;
@@ -160,11 +176,19 @@ background:#4f8cff;
 color:white;
 }
 
+/* ===================================== */
+/*             PAGE SECTION              */
+/* ===================================== */
+
 .page-section{
 min-height:100vh;
 
 padding:160px 8% 100px;
 }
+
+/* ===================================== */
+/*            SECTION TITLE              */
+/* ===================================== */
 
 .section-title{
 text-align:center;
@@ -177,6 +201,10 @@ margin-bottom:60px;
 font-size:54px;
 font-weight:700;
 }
+
+/* ===================================== */
+/*                CARD                   */
+/* ===================================== */
 
 .card{
 max-width:950px;
@@ -191,6 +219,10 @@ border-radius:24px;
 padding:45px;
 }
 
+/* ===================================== */
+/*            EDUCATION PAGE             */
+/* ===================================== */
+
 .education-program{
 font-size:20px;
 color:#d1d5db;
@@ -202,6 +234,10 @@ margin-top:15px;
 margin-top:10px;
 color:#94a3b8;
 }
+
+/* ===================================== */
+/*             SKILLS GRID               */
+/* ===================================== */
 
 .skills-grid{
 display:grid;
@@ -233,6 +269,10 @@ margin-bottom:15px;
 
 color:#4f8cff;
 }
+
+/* ===================================== */
+/*            PROJECT GRID               */
+/* ===================================== */
 
 .projects-grid{
 display:grid;
@@ -278,6 +318,10 @@ color:#94a3b8;
 font-size:14px;
 }
 
+/* ===================================== */
+/*            PROJECT LIST               */
+/* ===================================== */
+
 .project-list{
 padding-left:20px;
 
@@ -288,6 +332,9 @@ margin-top:20px;
 margin-bottom:12px;
 }
 
+/* ===================================== */
+/*                LIST                   */
+/* ===================================== */
 
 .list{
 padding-left:20px;
@@ -299,6 +346,10 @@ margin-top:20px;
 margin-bottom:14px;
 }
 
+/* ===================================== */
+/*                 HR                    */
+/* ===================================== */
+
 hr{
 border:none;
 
@@ -307,6 +358,9 @@ border-top:1px solid rgba(255,255,255,0.08);
 margin:30px 0;
 }
 
+/* ===================================== */
+/*              CONTACT                  */
+/* ===================================== */
 
 .contact-card{
 text-align:center;
@@ -325,6 +379,9 @@ transition:0.3s ease;
 
 .contact-card a:hover
 
+/* ===================================== */
+/*               FOOTER                  */
+/* ===================================== */
 
 .footer{
 padding:40px 8%;
@@ -359,6 +416,10 @@ transition:0.3s ease;
 color:#7c8799;
 }
 
+/* ===================================== */
+/*             SCROLLBAR                 */
+/* ===================================== */
+
 ::-webkit-scrollbar{
 width:10px;
 }
@@ -373,6 +434,10 @@ border-radius:10px;
 }
 
 ::-webkit-scrollbar-thumb:hover
+
+/* ===================================== */
+/*             RESPONSIVE                */
+/* ===================================== */
 
 @media(max-width:1000px){
 
@@ -454,5 +519,3 @@ width:100%;
 }
 
 }
-
-.footer-links a:hover
