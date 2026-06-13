@@ -7,27 +7,21 @@
 }
 
 body{
-    background:#1177B3;
-    color:#fff;
-    font-family:'Inter',sans-serif;
-    overflow:hidden;
-}
-
-a{
-    text-decoration:none;
+    background:#0F74AE;
     color:white;
+    font-family:'Inter',sans-serif;
 }
 
 .wrapper{
     width:100%;
-    max-width:1400px;
+    max-width:1300px;
     margin:0 auto;
-    padding:25px 30px;
+    padding:25px 20px;
 }
 
-/* =========================
+/* =======================
    HEADER
-========================= */
+======================= */
 
 header{
     display:flex;
@@ -36,33 +30,34 @@ header{
 }
 
 .logo{
-    font-size:16px;
+    font-size:15px;
     font-weight:700;
 }
 
 nav{
     display:flex;
-    gap:30px;
+    gap:35px;
 }
 
 nav a{
-    font-size:14px;
+    color:white;
+    text-decoration:none;
+    font-size:12px;
     font-weight:500;
 }
 
-/* =========================
+/* =======================
    HERO
-========================= */
+======================= */
 
 .hero{
-
-    margin-top:55px;
+    margin-top:45px;
 
     display:grid;
 
     grid-template-columns:
-    220px
-    650px;
+    170px
+    620px;
 
     column-gap:70px;
 
@@ -70,90 +65,97 @@ nav a{
 }
 
 .hero-image{
+    width:160px;
+    height:220px;
 
-    width:180px;
-    height:250px;
+    border-radius:80px 80px 0 0;
 
     overflow:hidden;
-
-    border-radius:90px 90px 0 0;
 }
 
 .hero-image img{
-
     width:100%;
     height:100%;
     object-fit:cover;
 }
 
 .hero-text{
-
-    width:650px;
+    max-width:760px;
 }
 
 .hero-text h1{
-
-    font-size:38px;
-    line-height:1.45;
+    font-size:34px;
+    line-height:1.4;
     font-weight:600;
 }
 
-/* =========================
+/* =======================
    INTRO
-========================= */
+======================= */
 
 .intro{
-
-    margin-top:70px;
+    
+    margin-top:45px;
 
     display:grid;
 
     grid-template-columns:
-    140px
-    70px
-    520px;
+    120px
+    60px
+    460px;
 
-    gap:30px;
+    gap:40px;
 }
 
 .line{
-
     width:110px;
     height:1px;
-
     background:white;
-
     margin-top:10px;
 }
 
 .intro-title{
-
     font-size:14px;
     font-weight:600;
 }
 
 .intro-text{
-
-    width:520px;
+    max-width:600px;
 }
 
 .intro-text p{
-
-    font-size:15px;
-    line-height:2;
-
-    color:#d7e4ee;
+    font-size:14px;
+    line-height:1.9;
+    color:#D8E4EE;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
+/* =======================
+   LAPTOP
+======================= */
 
-@media(max-width:1000px){
+@media(max-width:1200px){
 
-    body{
-        overflow:auto;
+    .hero{
+        grid-template-columns:1fr;
+        row-gap:30px;
     }
+
+    .intro{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+    .hero-text h1{
+        font-size:36px;
+    }
+
+}
+
+/* =======================
+   MOBILE
+======================= */
+
+@media(max-width:768px){
 
     .wrapper{
         padding:20px;
@@ -167,26 +169,21 @@ nav a{
     nav{
         flex-wrap:wrap;
         justify-content:center;
-    }
-
-    .hero{
-        grid-template-columns:1fr;
-        gap:30px;
-    }
-
-    .hero-text{
-        width:auto;
+        gap:15px;
     }
 
     .hero-text h1{
         font-size:30px;
+        line-height:1.4;
     }
 
-    .intro{
-        grid-template-columns:1fr;
+    .hero-image{
+        width:180px;
+        height:240px;
     }
 
-    .intro-text{
-        width:auto;
+    .intro-text p{
+        font-size:15px;
     }
+
 }
