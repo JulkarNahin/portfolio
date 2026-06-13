@@ -118,7 +118,7 @@ nav a{
 /* =========================
    INTRO SECTION
 ========================= */
-
+/*
 .intro{
 
     margin-top:65px;
@@ -133,6 +133,11 @@ nav a{
     gap:45px;
 
     margin-left:350px;
+}
+*/
+.intro-text{
+    width:auto;
+    max-width:900px;
 }
 
 .line{
