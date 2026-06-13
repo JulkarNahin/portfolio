@@ -1,17 +1,16 @@
-/* ==========================================
-   GOOGLE FONT
-========================================== */
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
-
-/* ==========================================
-   RESET
-========================================== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
+}
+
+:root{
+    --primary:#0B6EA8;
+    --white:#ffffff;
+    --muted:#d7e4ee;
+    --border:rgba(255,255,255,.25);
 }
 
 html{
@@ -20,37 +19,14 @@ html{
 
 body{
     font-family:'Inter',sans-serif;
-    background:#0B6EA8;
-    color:#ffffff;
+    background:var(--primary);
+    color:var(--white);
     overflow-x:hidden;
-}
-
-/* ==========================================
-   VARIABLES
-========================================== */
-
-:root{
-    --primary:#0B6EA8;
-    --white:#ffffff;
-    --muted:#d8e4ee;
-    --border:rgba(255,255,255,.25);
-    --transition:.3s ease;
-}
-
-/* ==========================================
-   GLOBAL
-========================================== */
-
-.container{
-    width:100%;
-    max-width:1600px;
-    margin:auto;
-    padding:0 60px;
 }
 
 a{
     text-decoration:none;
-    color:white;
+    color:var(--white);
 }
 
 ul{
@@ -58,17 +34,23 @@ ul{
 }
 
 img{
-    display:block;
     width:100%;
+    display:block;
 }
 
-/* ==========================================
+.container{
+    width:100%;
+    max-width:1700px;
+    margin:0 auto;
+    padding:0 60px;
+}
+
+/* =========================
    NAVBAR
-========================================== */
+========================= */
 
 header{
-    width:100%;
-    padding:30px 0;
+    padding:25px 0;
 }
 
 nav{
@@ -78,55 +60,45 @@ nav{
 }
 
 .logo{
-    font-size:2rem;
+    font-size:1.2rem;
     font-weight:700;
-    letter-spacing:-1px;
 }
 
 .nav-links{
     display:flex;
-    align-items:center;
-    gap:30px;
+    gap:40px;
 }
 
 .nav-links a{
-    font-size:.95rem;
+    font-size:.9rem;
     font-weight:500;
-    opacity:.9;
-    transition:var(--transition);
+    transition:.3s;
 }
 
 .nav-links a:hover{
-    opacity:1;
+    opacity:.8;
 }
 
-.mobile-menu{
-    display:none;
-    font-size:1.8rem;
-    cursor:pointer;
-}
-
-/* ==========================================
-   HOME HERO
-========================================== */
+/* =========================
+   HERO
+========================= */
 
 .hero{
-    margin-top:40px;
+    margin-top:20px;
 
     display:grid;
-    grid-template-columns:320px 1fr;
+    grid-template-columns:260px 1fr;
 
-    gap:80px;
-    align-items:center;
+    gap:110px;
+
+    align-items:start;
 }
 
 .profile-image{
-    width:280px;
-    height:320px;
-
+    width:250px;
+    height:300px;
     overflow:hidden;
-
-    border-radius:150px 150px 0 0;
+    border-radius:140px 140px 0 0;
 }
 
 .profile-image img{
@@ -136,114 +108,112 @@ nav{
 }
 
 .hero-text h1{
-    font-size:4.5rem;
-    line-height:1.15;
+    font-size:4rem;
+    line-height:1.2;
     font-weight:700;
-    max-width:950px;
+    max-width:900px;
 }
 
-/* ==========================================
-   INTRO SECTION
-========================================== */
+/* =========================
+   INTRO
+========================= */
 
 .intro{
-    margin-top:120px;
+    margin-top:70px;
 
     display:grid;
-
     grid-template-columns:
-    180px
-    120px
+    140px
+    80px
     1fr;
 
     gap:40px;
 }
 
 .intro-line{
-    width:120px;
+    width:110px;
     height:1px;
     background:white;
     margin-top:10px;
 }
 
 .intro-label{
-    font-size:1rem;
+    font-size:.95rem;
     font-weight:600;
 }
 
 .intro-content{
-    max-width:850px;
+    max-width:700px;
 }
 
 .intro-content p{
-    font-size:1.4rem;
-    line-height:2;
     color:var(--muted);
+    font-size:1rem;
+    line-height:2;
 }
 
-/* ==========================================
+/* =========================
    PAGE HEADER
-========================================== */
+========================= */
 
 .page-header{
-    margin-top:80px;
-    margin-bottom:80px;
+    margin-top:60px;
+    margin-bottom:70px;
 }
 
 .page-header h1{
-    font-size:5rem;
-    font-weight:800;
+    font-size:4rem;
+    font-weight:700;
 }
 
-/* ==========================================
-   SKILLS PAGE
-========================================== */
+/* =========================
+   SKILLS
+========================= */
 
 .skills-section{
     max-width:900px;
 }
 
 .skill-group{
-    padding:40px 0;
+    padding:35px 0;
     border-bottom:1px solid var(--border);
 }
 
 .skill-group h2{
-    font-size:2rem;
     margin-bottom:15px;
+    font-size:1.8rem;
 }
 
 .skill-group p{
-    font-size:1.2rem;
-    line-height:2;
     color:var(--muted);
+    font-size:1.1rem;
+    line-height:2;
 }
 
-/* ==========================================
-   PROJECTS PAGE
-========================================== */
+/* =========================
+   PROJECTS
+========================= */
 
 .project{
-    padding:60px 0;
+    padding:50px 0;
     border-bottom:1px solid var(--border);
 }
 
 .project-number{
-    font-size:1rem;
-    opacity:.7;
     margin-bottom:10px;
+    opacity:.7;
 }
 
 .project h2{
-    font-size:2.3rem;
-    margin-bottom:20px;
+    font-size:2rem;
+    margin-bottom:15px;
 }
 
 .project p{
-    max-width:700px;
     color:var(--muted);
-    line-height:1.8;
-    margin-bottom:25px;
+    line-height:1.9;
+    max-width:800px;
+    margin-bottom:20px;
 }
 
 .project-links{
@@ -251,40 +221,25 @@ nav{
     gap:30px;
 }
 
-.project-links a{
-    font-weight:600;
-}
-
 .project-links a:hover{
     text-decoration:underline;
 }
 
-.project-links a{
-    position:relative;
-    display:inline-block;
-}
+/* =========================
+   RESUME
+========================= */
 
-.project-links a::after{
-    content:'';
-    position:absolute;
-    width:0;
-    height:1px;
-    left:0;
-    bottom:-4px;
-    background:white;
+.download-btn{
+    display:inline-block;
+    padding:14px 28px;
+    border:1px solid white;
+    margin-bottom:30px;
     transition:.3s;
 }
 
-.project-links a:hover::after{
-    width:100%;
-}
-
-/* ==========================================
-   RESUME PAGE
-========================================== */
-/*
-.resume-container{
-    width:100%;
+.download-btn:hover{
+    background:white;
+    color:var(--primary);
 }
 
 .resume-viewer{
@@ -295,106 +250,59 @@ nav{
     background:white;
 }
 
-.download-btn{
-    display:inline-block;
-    margin-bottom:30px;
-    padding:15px 30px;
-    border:1px solid white;
-    transition:var(--transition);
-}
-
-.download-btn:hover{
-    background:white;
-    color:var(--primary);
-}
-*/
-.resume-container{
-    width:100%;
-    margin-bottom:40px;
-}
-
-.resume-viewer{
-    width:100%;
-    height:1100px;
-    border:none;
-    border-radius:12px;
-    background:white;
-}
-
-.download-btn{
-    display:inline-block;
-    padding:14px 28px;
-    border:1px solid white;
-    margin-bottom:40px;
-    transition:.3s ease;
-    font-weight:600;
-}
-
-.download-btn:hover{
-    background:white;
-    color:#0B6EA8;
-}
-
-/* ==========================================
+/* =========================
    CERTIFICATIONS
-========================================== */
+========================= */
 
 .timeline{
     max-width:900px;
 }
 
 .timeline-item{
-    padding:50px 0;
+    padding:40px 0;
     border-bottom:1px solid var(--border);
 }
 
 .timeline-year{
-    font-size:1rem;
+    opacity:.7;
     margin-bottom:10px;
-    opacity:.8;
 }
 
 .timeline-item h2{
-    font-size:2rem;
     margin-bottom:10px;
 }
 
-.timeline-item p{
-    color:var(--muted);
-}
-
-/* ==========================================
+/* =========================
    CONTACT
-========================================== */
+========================= */
 
 .contact-list{
     display:flex;
     flex-direction:column;
-    gap:35px;
+    gap:30px;
 }
 
 .contact-item{
-    border-bottom:1px solid var(--border);
     padding-bottom:25px;
+    border-bottom:1px solid var(--border);
 }
 
 .contact-item h3{
     margin-bottom:10px;
 }
 
-.contact-item a,
-.contact-item p{
-    font-size:1.2rem;
+.contact-item p,
+.contact-item a{
     color:var(--muted);
 }
 
-/* ==========================================
+/* =========================
    FOOTER
-========================================== */
+========================= */
 
 footer{
-    margin-top:120px;
-    padding:40px 0;
+    margin-top:100px;
+    padding:35px 0;
     border-top:1px solid var(--border);
 }
 
@@ -409,34 +317,27 @@ footer{
     gap:25px;
 }
 
-/* ==========================================
-   TABLET
-========================================== */
+/* =========================
+   RESPONSIVE
+========================= */
 
 @media(max-width:1200px){
 
     .hero{
         grid-template-columns:1fr;
-        gap:50px;
+        gap:40px;
     }
 
     .hero-text h1{
-        font-size:3.5rem;
+        font-size:3rem;
     }
 
     .intro{
         grid-template-columns:1fr;
-    }
-
-    .intro-label{
-        margin-top:-20px;
+        gap:20px;
     }
 
 }
-
-/* ==========================================
-   MOBILE
-========================================== */
 
 @media(max-width:768px){
 
@@ -444,54 +345,25 @@ footer{
         padding:0 25px;
     }
 
-    .mobile-menu{
-        display:block;
-    }
-
     .nav-links{
         display:none;
     }
 
-    .logo{
-        font-size:1.5rem;
-    }
-
-    .hero{
-        margin-top:20px;
-    }
-
-    .profile-image{
-        width:220px;
-        height:260px;
-    }
-
     .hero-text h1{
-        font-size:2.4rem;
-    }
-
-    .intro-content p{
-        font-size:1.1rem;
+        font-size:2.2rem;
     }
 
     .page-header h1{
-        font-size:3rem;
-    }
-
-    .project h2{
-        font-size:1.7rem;
-    }
-
-    .skill-group h2{
-        font-size:1.6rem;
-    }
-
-    .resume-viewer{
-        height:700px;
+        font-size:2.8rem;
     }
 
     .footer-content{
         flex-direction:column;
         gap:20px;
+    }
+
+    .resume-viewer{
+        height:700px;
     }
 
 }
