@@ -75,7 +75,7 @@ nav a{
     200px
     950px;
 
-    column-gap:60px;
+    column-gap:40px;
 
     align-items:start;
 
@@ -107,7 +107,7 @@ nav a{
 
 .hero-text h1{
 
-    font-size:32px;
+    font-size:35px;
     font-weight:600;
 
     line-height:1.42;
