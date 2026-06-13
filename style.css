@@ -47,7 +47,7 @@ header{
 }
 
 .logo{
-    font-size:18px;
+    font-size:24px;
     font-weight:700;
 }
 
@@ -90,7 +90,7 @@ nav i{
 
     align-items:start;
 
-    margin-left:80px;
+    margin-left:150px;
 }
 
 .hero-image{
@@ -134,7 +134,7 @@ nav i{
 
     gap:40px;
 
-    margin-left:80px;
+    margin-left:500px;
 }
 
 .line{
