@@ -7,21 +7,31 @@
 }
 
 body{
-    background:#0F74AE;
+    background:#1177B3;
     color:white;
     font-family:'Inter',sans-serif;
+    min-height:100vh;
 }
+
+a{
+    text-decoration:none;
+    color:white;
+}
+
+/* =========================
+   CONTAINER
+========================= */
 
 .wrapper{
     width:100%;
-    max-width:1300px;
+    max-width:1200px;
     margin:0 auto;
-    padding:25px 20px;
+    padding:30px 20px;
 }
 
-/* =======================
+/* =========================
    HEADER
-======================= */
+========================= */
 
 header{
     display:flex;
@@ -36,30 +46,30 @@ header{
 
 nav{
     display:flex;
-    gap:35px;
+    gap:32px;
 }
 
 nav a{
-    color:white;
-    text-decoration:none;
     font-size:12px;
     font-weight:500;
 }
 
-/* =======================
-   HERO
-======================= */
+/* =========================
+   HERO SECTION
+========================= */
 
 .hero{
-    margin-top:45px;
+
+    margin-top:55px;
+    margin-left:90px;
 
     display:grid;
 
     grid-template-columns:
-    170px
+    160px
     620px;
 
-    column-gap:70px;
+    column-gap:55px;
 
     align-items:start;
 }
@@ -68,9 +78,9 @@ nav a{
     width:160px;
     height:220px;
 
-    border-radius:80px 80px 0 0;
-
     overflow:hidden;
+
+    border-radius:80px 80px 0 0;
 }
 
 .hero-image img{
@@ -80,22 +90,23 @@ nav a{
 }
 
 .hero-text{
-    max-width:760px;
+    width:620px;
 }
 
 .hero-text h1{
     font-size:34px;
-    line-height:1.4;
     font-weight:600;
+    line-height:1.45;
 }
 
-/* =======================
+/* =========================
    INTRO
-======================= */
+========================= */
 
 .intro{
-    
-    margin-top:45px;
+
+    margin-top:55px;
+    margin-left:90px;
 
     display:grid;
 
@@ -104,7 +115,7 @@ nav a{
     60px
     460px;
 
-    gap:40px;
+    gap:30px;
 }
 
 .line{
@@ -120,40 +131,43 @@ nav a{
 }
 
 .intro-text{
-    max-width:600px;
+    width:460px;
 }
 
 .intro-text p{
     font-size:14px;
-    line-height:1.9;
+    line-height:2;
     color:#D8E4EE;
+    margin-bottom:18px;
 }
 
-/* =======================
-   LAPTOP
-======================= */
+/* =========================
+   TABLET
+========================= */
 
-@media(max-width:1200px){
+@media(max-width:1000px){
 
     .hero{
+        margin-left:0;
         grid-template-columns:1fr;
-        row-gap:30px;
+        gap:30px;
     }
 
     .intro{
+        margin-left:0;
         grid-template-columns:1fr;
         gap:20px;
     }
 
-    .hero-text h1{
-        font-size:36px;
+    .hero-text,
+    .intro-text{
+        width:auto;
     }
-
 }
 
-/* =======================
+/* =========================
    MOBILE
-======================= */
+========================= */
 
 @media(max-width:768px){
 
@@ -172,9 +186,8 @@ nav a{
         gap:15px;
     }
 
-    .hero-text h1{
-        font-size:30px;
-        line-height:1.4;
+    .hero{
+        margin-top:40px;
     }
 
     .hero-image{
@@ -182,8 +195,13 @@ nav a{
         height:240px;
     }
 
-    .intro-text p{
-        font-size:15px;
+    .hero-text h1{
+        font-size:28px;
+        line-height:1.4;
     }
 
+    .intro-text p{
+        font-size:15px;
+        line-height:1.8;
+    }
 }
