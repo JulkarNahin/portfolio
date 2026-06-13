@@ -107,12 +107,12 @@ nav a{
 
 .hero-text h1{
 
-    font-size:26px;
+    font-size:30px;
     font-weight:600;
 
-    line-height:1.5;
+    line-height:1.45;
 
-    letter-spacing:-0.3px;
+    letter-spacing:-0.5px;
 }
 
 /* =========================
