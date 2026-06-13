@@ -9,7 +9,7 @@
 html,
 body{
     width:100%;
-    height:100%;
+    min-height:100%;
 }
 
 body{
@@ -53,12 +53,23 @@ header{
 
 nav{
     display:flex;
-    gap:38px;
+    align-items:center;
+    gap:28px;
 }
 
 nav a{
+    color:white;
     font-size:14px;
-    font-weight:600;
+    font-weight:500;
+    transition:0.3s ease;
+}
+
+nav a:hover{
+    opacity:0.8;
+}
+
+nav i{
+    font-size:18px;
 }
 
 /* =========================
@@ -72,47 +83,38 @@ nav a{
     display:grid;
 
     grid-template-columns:
-    200px
-    620px;
+    185px
+    1fr;
 
-    column-gap:90px;
+    column-gap:60px;
 
     align-items:start;
 
-    margin-left:110px;
+    margin-left:80px;
 }
 
 .hero-image{
-
     width:185px;
     height:255px;
-
     overflow:hidden;
-
     border-radius:95px 95px 0 0;
 }
 
 .hero-image img{
-
     width:100%;
     height:100%;
-
     object-fit:cover;
 }
 
 .hero-text{
-
-    width:620px;
+    max-width:950px;
 }
 
 .hero-text h1{
-
-    font-size:34px;
+    font-size:28px;
     font-weight:600;
-
-    line-height:1.42;
-
-    letter-spacing:-0.5px;
+    line-height:1.6;
+    letter-spacing:-0.2px;
 }
 
 /* =========================
@@ -121,52 +123,42 @@ nav a{
 
 .intro{
 
-    margin-top:65px;
+    margin-top:70px;
 
     display:grid;
 
     grid-template-columns:
     120px
     70px
-    520px;
+    1fr;
 
-    gap:45px;
+    gap:40px;
 
-    margin-left:500px;
+    margin-left:80px;
 }
 
 .line{
-
     width:120px;
     height:1px;
-
     background:white;
-
-    margin-top:12px;
+    margin-top:10px;
 }
 
 .intro-title{
-
     font-size:14px;
     font-weight:600;
 }
 
 .intro-text{
-
-    width:520px;
+    max-width:850px;
 }
 
 .intro-text p{
-
     font-family:Georgia, serif;
-
-    font-size:14px;
-
-    line-height:2.05;
-
+    font-size:15px;
+    line-height:2;
     color:#dbe6ef;
-
-    margin-bottom:16px;
+    margin-bottom:18px;
 }
 
 /* =========================
@@ -189,7 +181,7 @@ nav a{
 
     .hero-text,
     .intro-text{
-        width:100%;
+        max-width:100%;
     }
 }
 
@@ -214,14 +206,23 @@ nav a{
         gap:15px;
     }
 
+    .hero{
+        margin-left:0;
+        margin-top:40px;
+    }
+
     .hero-image{
         width:180px;
         height:240px;
     }
 
     .hero-text h1{
-        font-size:28px;
-        line-height:1.4;
+        font-size:24px;
+        line-height:1.5;
+    }
+
+    .intro{
+        margin-left:0;
     }
 
     .intro-text p{
