@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 *{
     margin:0;
@@ -6,330 +6,138 @@
     box-sizing:border-box;
 }
 
-:root{
-    --primary:#0B6EA8;
-    --white:#ffffff;
-    --muted:#d7e4ee;
-    --border:rgba(255,255,255,.25);
-}
-
-html{
-    scroll-behavior:smooth;
-}
-
 body{
+    background:#0F74AE;
+    color:white;
     font-family:'Inter',sans-serif;
-    background:var(--primary);
-    color:var(--white);
-    overflow-x:hidden;
 }
 
-a{
-    text-decoration:none;
-    color:var(--white);
-}
-
-ul{
-    list-style:none;
-}
-
-img{
+.wrapper{
     width:100%;
-    display:block;
-}
-
-.container{
-    width:100%;
-    max-width:1700px;
+    max-width:1500px;
     margin:0 auto;
-    padding:0 60px;
+    padding:25px 40px;
 }
 
-/* =========================
-   NAVBAR
-========================= */
+/* =======================
+   HEADER
+======================= */
 
 header{
-    padding:25px 0;
-}
-
-nav{
     display:flex;
     justify-content:space-between;
     align-items:center;
 }
 
 .logo{
-    font-size:1.2rem;
+    font-size:18px;
     font-weight:700;
 }
 
-.nav-links{
+nav{
     display:flex;
-    gap:40px;
+    gap:35px;
 }
 
-.nav-links a{
-    font-size:.9rem;
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:14px;
     font-weight:500;
-    transition:.3s;
 }
 
-.nav-links a:hover{
-    opacity:.8;
-}
-
-/* =========================
+/* =======================
    HERO
-========================= */
+======================= */
 
 .hero{
-    margin-top:20px;
+    margin-top:55px;
 
     display:grid;
-    grid-template-columns:260px 1fr;
 
-    gap:110px;
+    grid-template-columns:
+    220px
+    1fr;
+
+    column-gap:90px;
 
     align-items:start;
 }
 
-.profile-image{
-    width:250px;
-    height:300px;
+.hero-image{
+    width:180px;
+    height:250px;
+
+    border-radius:90px 90px 0 0;
+
     overflow:hidden;
-    border-radius:140px 140px 0 0;
 }
 
-.profile-image img{
+.hero-image img{
     width:100%;
     height:100%;
     object-fit:cover;
 }
 
-.hero-text h1{
-    font-size:4rem;
-    line-height:1.2;
-    font-weight:700;
-    max-width:900px;
+.hero-text{
+    max-width:760px;
 }
 
-/* =========================
+.hero-text h1{
+    font-size:48px;
+    line-height:1.35;
+    font-weight:600;
+}
+
+/* =======================
    INTRO
-========================= */
+======================= */
 
 .intro{
+
     margin-top:70px;
 
     display:grid;
+
     grid-template-columns:
     140px
     80px
-    1fr;
+    600px;
 
     gap:40px;
 }
 
-.intro-line{
+.line{
     width:110px;
     height:1px;
     background:white;
     margin-top:10px;
 }
 
-.intro-label{
-    font-size:.95rem;
+.intro-title{
+    font-size:14px;
     font-weight:600;
 }
 
-.intro-content{
-    max-width:700px;
+.intro-text{
+    max-width:600px;
 }
 
-.intro-content p{
-    color:var(--muted);
-    font-size:1rem;
+.intro-text p{
+    font-size:16px;
     line-height:2;
+    color:#D8E4EE;
 }
 
-/* =========================
-   PAGE HEADER
-========================= */
-
-.page-header{
-    margin-top:60px;
-    margin-bottom:70px;
-}
-
-.page-header h1{
-    font-size:4rem;
-    font-weight:700;
-}
-
-/* =========================
-   SKILLS
-========================= */
-
-.skills-section{
-    max-width:900px;
-}
-
-.skill-group{
-    padding:35px 0;
-    border-bottom:1px solid var(--border);
-}
-
-.skill-group h2{
-    margin-bottom:15px;
-    font-size:1.8rem;
-}
-
-.skill-group p{
-    color:var(--muted);
-    font-size:1.1rem;
-    line-height:2;
-}
-
-/* =========================
-   PROJECTS
-========================= */
-
-.project{
-    padding:50px 0;
-    border-bottom:1px solid var(--border);
-}
-
-.project-number{
-    margin-bottom:10px;
-    opacity:.7;
-}
-
-.project h2{
-    font-size:2rem;
-    margin-bottom:15px;
-}
-
-.project p{
-    color:var(--muted);
-    line-height:1.9;
-    max-width:800px;
-    margin-bottom:20px;
-}
-
-.project-links{
-    display:flex;
-    gap:30px;
-}
-
-.project-links a:hover{
-    text-decoration:underline;
-}
-
-/* =========================
-   RESUME
-========================= */
-
-.download-btn{
-    display:inline-block;
-    padding:14px 28px;
-    border:1px solid white;
-    margin-bottom:30px;
-    transition:.3s;
-}
-
-.download-btn:hover{
-    background:white;
-    color:var(--primary);
-}
-
-.resume-viewer{
-    width:100%;
-    height:1000px;
-    border:none;
-    border-radius:10px;
-    background:white;
-}
-
-/* =========================
-   CERTIFICATIONS
-========================= */
-
-.timeline{
-    max-width:900px;
-}
-
-.timeline-item{
-    padding:40px 0;
-    border-bottom:1px solid var(--border);
-}
-
-.timeline-year{
-    opacity:.7;
-    margin-bottom:10px;
-}
-
-.timeline-item h2{
-    margin-bottom:10px;
-}
-
-/* =========================
-   CONTACT
-========================= */
-
-.contact-list{
-    display:flex;
-    flex-direction:column;
-    gap:30px;
-}
-
-.contact-item{
-    padding-bottom:25px;
-    border-bottom:1px solid var(--border);
-}
-
-.contact-item h3{
-    margin-bottom:10px;
-}
-
-.contact-item p,
-.contact-item a{
-    color:var(--muted);
-}
-
-/* =========================
-   FOOTER
-========================= */
-
-footer{
-    margin-top:100px;
-    padding:35px 0;
-    border-top:1px solid var(--border);
-}
-
-.footer-content{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
-
-.footer-links{
-    display:flex;
-    gap:25px;
-}
-
-/* =========================
-   RESPONSIVE
-========================= */
+/* =======================
+   LAPTOP
+======================= */
 
 @media(max-width:1200px){
 
     .hero{
         grid-template-columns:1fr;
-        gap:40px;
-    }
-
-    .hero-text h1{
-        font-size:3rem;
+        row-gap:30px;
     }
 
     .intro{
@@ -337,33 +145,45 @@ footer{
         gap:20px;
     }
 
+    .hero-text h1{
+        font-size:36px;
+    }
+
 }
+
+/* =======================
+   MOBILE
+======================= */
 
 @media(max-width:768px){
 
-    .container{
-        padding:0 25px;
+    .wrapper{
+        padding:20px;
     }
 
-    .nav-links{
-        display:none;
-    }
-
-    .hero-text h1{
-        font-size:2.2rem;
-    }
-
-    .page-header h1{
-        font-size:2.8rem;
-    }
-
-    .footer-content{
+    header{
         flex-direction:column;
         gap:20px;
     }
 
-    .resume-viewer{
-        height:700px;
+    nav{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+    }
+
+    .hero-text h1{
+        font-size:30px;
+        line-height:1.4;
+    }
+
+    .hero-image{
+        width:180px;
+        height:240px;
+    }
+
+    .intro-text p{
+        font-size:15px;
     }
 
 }
