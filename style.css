@@ -219,6 +219,66 @@ nav i{
 }
 
 /* =========================
+   CONTACT PAGE
+========================= */
+
+.contact-page{
+    margin-top:60px;
+    margin-left:80px;
+}
+
+.contact-header{
+    display:flex;
+    align-items:center;
+    gap:40px;
+    margin-bottom:50px;
+}
+
+.contact-title{
+    font-size:14px;
+    font-weight:600;
+}
+
+.contact-content{
+    max-width:900px;
+}
+
+.contact-item{
+    display:flex;
+    gap:50px;
+    padding:20px 0;
+    border-bottom:1px solid rgba(255,255,255,0.2);
+}
+
+.contact-item span{
+    min-width:120px;
+    font-size:14px;
+    font-weight:600;
+}
+
+.contact-item a{
+    color:#dbe6ef;
+    font-size:15px;
+    transition:0.3s;
+}
+
+.contact-item a:hover{
+    color:white;
+}
+
+@media(max-width:768px){
+
+    .contact-page{
+        margin-left:0;
+    }
+
+    .contact-item{
+        flex-direction:column;
+        gap:10px;
+    }
+}
+
+/* =========================
    TABLET
 ========================= */
 
