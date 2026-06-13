@@ -227,58 +227,54 @@ nav i{
     margin-left:140px;
 }
 
-.certifications-header{
-    display:flex;
-    align-items:center;
-    gap:40px;
-    margin-bottom:50px;
+.awards-page{
+    margin-top:80px;
+    margin-left:140px;
+    margin-bottom:80px;
 }
 
-.certifications-title{
-    font-size:14px;
-    font-weight:600;
-}
-
-.certificate-grid{
+.pdf-grid{
     display:grid;
-    grid-template-columns:repeat(2, 1fr);
+    grid-template-columns:repeat(2,1fr);
     gap:40px;
     max-width:1100px;
 }
 
-.certificate-card{
+.pdf-card{
     background:rgba(255,255,255,0.08);
     border-radius:12px;
     overflow:hidden;
+    padding:20px;
 }
 
-.certificate-card img{
+.pdf-card iframe{
     width:100%;
-    display:block;
-
-    user-select:none;
-    -webkit-user-drag:none;
+    height:450px;
+    border:none;
+    background:white;
+    border-radius:6px;
 }
 
-.certificate-card h3{
-    padding:20px 20px 8px;
+.pdf-card h3{
+    margin-top:15px;
     font-size:18px;
     font-weight:600;
 }
 
-.certificate-card p{
-    padding:0 20px 20px;
+.pdf-card p{
+    margin-top:8px;
     color:#dbe6ef;
     font-size:14px;
 }
 
 @media(max-width:1100px){
 
-    .certifications-page{
+    .certifications-page,
+    .awards-page{
         margin-left:0;
     }
 
-    .certificate-grid{
+    .pdf-grid{
         grid-template-columns:1fr;
     }
 }
