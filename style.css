@@ -499,11 +499,18 @@ nav i{
     .hero{
         margin-left:0;
         margin-top:40px;
+        grid-template-columns:1fr;
+        gap:25px;
     }
 
     .hero-image{
         width:180px;
         height:240px;
+    }
+
+    .hero-text{
+        margin-left:0;
+        max-width:100%;
     }
 
     .hero-text h1{
@@ -513,10 +520,67 @@ nav i{
 
     .intro{
         margin-left:0;
+        grid-template-columns:1fr;
+        gap:15px;
+    }
+
+    .line{
+        width:100px;
+    }
+
+    .intro-text{
+        max-width:100%;
     }
 
     .intro-text p{
         font-size:15px;
         line-height:1.8;
+    }
+
+    /* Skills */
+    .skills-page{
+        margin-left:0;
+    }
+
+    /* Projects */
+    .projects-page{
+        margin-left:0;
+    }
+
+    .project-image{
+        height:220px;
+    }
+
+    /* Resume */
+    .resume-page{
+        margin-left:0;
+    }
+
+    .resume-viewer{
+        height:600px;
+    }
+
+    /* Certifications */
+    .certifications-page,
+    .awards-page{
+        margin-left:0;
+    }
+
+    .pdf-grid{
+        grid-template-columns:1fr;
+    }
+
+    .pdf-card iframe{
+        height:350px;
+    }
+
+    /* Contact */
+    .contact-page{
+        margin-left:0;
+    }
+
+    .contact-item{
+        flex-direction:column;
+        gap:10px;
     }
 }
