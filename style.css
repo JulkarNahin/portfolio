@@ -73,7 +73,7 @@ nav a{
 
     grid-template-columns:
     200px
-    780px;
+    950px;
 
     column-gap:90px;
 
@@ -102,17 +102,17 @@ nav a{
 
 .hero-text{
 
-    width:780px;
+    width:950px;
 }
 
 .hero-text h1{
 
-    font-size:30px;
+    font-size:26px;
     font-weight:600;
 
-    line-height:1.45;
+    line-height:1.5;
 
-    letter-spacing:-0.5px;
+    letter-spacing:-0.3px;
 }
 
 /* =========================
